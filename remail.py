@@ -33,6 +33,7 @@ def remail(gifter, contactsfile, cyclefile):
     gifter_info = contacts[gifter]
     recipient_info = contacts[cycle_dict[gifter]]
     util.send_mail(gifter_info, recipient_info)
+    print('Mailed to', gifter)
 
 
 def show_gifters(contactsfile, cyclefile):

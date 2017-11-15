@@ -27,6 +27,7 @@ def mail(contactsfile, cyclefile):
         gifter_info = contacts[gifter]
         recipient_info = contacts[gift_recipient]
         util.send_mail(gifter_info, recipient_info)
+	print('Mailed to', gifter)
 
 
 if __name__ == '__main__':
