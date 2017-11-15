@@ -104,17 +104,15 @@ def format_message(gifter, recipient, template=None):
     message = MIMEMultipart()
     for key, value in template['header'].items():
         message[key] = val = value.format(gifter=gifter, recipient=recipient)
-        print(key + ':', val)
 
     # Make the body
     body = template['body'].format(gifter=gifter, recipient=recipient)
-    print(body)
     message.attach(MIMEText(body))
 
     return message
 
 
-def send_mail(gifter_info, recipient_info, template=None, server=None):
+def send_mail(gifter_info, recipient_info, template=None, server='localhost'):
     'Send an email based on the template and the info'
 
     message = format_message(gifter_info, recipient_info, template)
