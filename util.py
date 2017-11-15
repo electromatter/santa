@@ -87,10 +87,14 @@ You are gifting:
 {recipient[name]}
 {recipient[address]}
 
+Remember, please don't tell the others who you're gifting until after
+you've given your gift and keep an eye on slack to know when to deliver
+your gift.
+
 Thank you for participating in Secret Santa!
 
 Sincerely,
-The Have-you-ever-heard-of-the-tragedy-of Secret Santa Bot
+The Have you ever heard of the tragedy of Secret Santa Bot
 ''')
 
 
